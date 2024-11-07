@@ -136,6 +136,29 @@ body {
   padding-bottom: 60px;
 }
 
+.contact-btn {
+  color: #fff;
+  background-color: #333;
+  border-radius: 5px;
+  align-items: center;
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color .3s;
+  display: inline-flex;
+}
+
+.contact-btn i {
+  margin-right: 8px;
+  font-size: 1.3em;
+}
+
+.contact-btn:hover {
+  background-color: #555;
+}
+
 @media screen and (width <= 768px) {
   header h1 {
     font-size: 1.5em;
@@ -226,6 +249,60 @@ body {
 
   nav ul li a {
     padding: 12px 20px;
+  }
+}
+
+#portfolio .projects {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  display: flex;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 1550px;
+  padding: 20px;
+  transition: transform .3s ease-in-out, box-shadow .3s ease-in-out;
+  box-shadow: 0 4px 6px #0000001a;
+}
+
+.project-card h3 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 1.6em;
+}
+
+.project-card p {
+  color: #555;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.project-card ul {
+  margin-top: 15px;
+  padding: 0;
+  list-style: none;
+}
+
+.project-card ul li {
+  margin-bottom: 8px;
+}
+
+.project-card ul li strong {
+  color: #333;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px #00000026;
+}
+
+@media screen and (width <= 768px) {
+  .project-card {
+    max-width: 100%;
   }
 }
 /*# sourceMappingURL=index.1303bb05.css.map */
